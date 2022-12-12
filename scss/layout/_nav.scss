@@ -4,6 +4,12 @@ nav{
     padding: 0;
   }
 
+  .navbar-brand{
+    &:hover{
+      animation: swingBounce 1.5s ease;
+    }
+  }
+
   .nav-link{
     color: $color-secondary;
     font-weight: 700;
@@ -11,6 +17,10 @@ nav{
 
     @media (min-width: $min-lg){
       font-size: 1.5rem;
+    }
+
+    &:hover{
+      animation: swingBounce 1.5s ease;
     }
   }
 

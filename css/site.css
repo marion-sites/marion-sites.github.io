@@ -1,4 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@-webkit-keyframes swingBounce {
+  15% {
+    -webkit-transform: translateY(2.5px);
+    transform: translateY(2.5px);
+  }
+  30% {
+    -webkit-transform: translateY(-2.5px);
+    transform: translateY(-2.5px);
+  }
+  50% {
+    -webkit-transform: translateY(1.5px);
+    transform: translateY(1.5px);
+  }
+  65% {
+    -webkit-transform: translateY(-1.5px);
+    transform: translateY(-1.5px);
+  }
+  80% {
+    -webkit-transform: translateY(0.5px);
+    transform: translateY(0.5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes swingBounce {
+  15% {
+    -webkit-transform: translateY(2.5px);
+    transform: translateY(2.5px);
+  }
+  30% {
+    -webkit-transform: translateY(-2.5px);
+    transform: translateY(-2.5px);
+  }
+  50% {
+    -webkit-transform: translateY(1.5px);
+    transform: translateY(1.5px);
+  }
+  65% {
+    -webkit-transform: translateY(-1.5px);
+    transform: translateY(-1.5px);
+  }
+  80% {
+    -webkit-transform: translateY(0.5px);
+    transform: translateY(0.5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 body {
   font-size: 16px;
   line-height: 1.4;
@@ -6,6 +58,16 @@ body {
   font-weight: 400;
   background-color: #FFFBF0;
   color: #216544;
+}
+
+a, .nav-link {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+a:hover, .nav-link:hover {
+  color: #6e6e6e;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 strong {
@@ -228,6 +290,10 @@ strong {
 nav.navbar {
   padding: 0;
 }
+nav .navbar-brand:hover {
+  -webkit-animation: swingBounce 1.5s ease;
+          animation: swingBounce 1.5s ease;
+}
 nav .nav-link {
   color: #FFFBF0;
   font-weight: 700;
@@ -237,6 +303,10 @@ nav .nav-link {
   nav .nav-link {
     font-size: 1.5rem;
   }
+}
+nav .nav-link:hover {
+  -webkit-animation: swingBounce 1.5s ease;
+          animation: swingBounce 1.5s ease;
 }
 nav .navbar-toggler {
   border: none;

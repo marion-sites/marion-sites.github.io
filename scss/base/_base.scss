@@ -7,6 +7,15 @@ body{
   color: $color-primary;
 }
 
+a, .nav-link{
+  @include e_transition(all, .5s);
+
+  &:hover{
+    color: $color-dark;
+    @include e_transition(all, .5s);
+  }
+}
+
 strong{
   font-weight: 700;
 }

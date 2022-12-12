@@ -5,6 +5,33 @@
           transition: $property $duration $ease;
 }
 
+@keyframes swingBounce {
+  15% {
+    -webkit-transform: translateY(2.5px);
+    transform: translateY(2.5px);
+  }
+  30% {
+    -webkit-transform: translateY(-2.5px);
+    transform: translateY(-2.5px);
+  }
+  50% {
+    -webkit-transform: translateY(1.5px);
+    transform: translateY(1.5px);
+  }
+  65% {
+    -webkit-transform: translateY(-1.5px);
+    transform: translateY(-1.5px);
+  }
+  80% {
+    -webkit-transform: translateY(0.5px);
+    transform: translateY(0.5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 @mixin spacing-top($mobile, $desktop) {
   padding-top: $mobile;
 
