@@ -1,0 +1,52 @@
+.font72{
+
+  &-static{
+    font-size: 4.5rem;
+  }
+
+  font-size: 3.5rem;
+
+  @media (min-width: $min-lg){
+    font-size: 4.5rem;
+  }
+}
+
+.font48{
+
+  &-static{
+    font-size: 3rem;
+  }
+
+  font-size: 2.25rem;
+
+  @media (min-width: $min-lg){
+    font-size: 3rem;
+  }
+}
+
+.font36{
+
+  &-static{
+    font-size: 2.25rem;
+  }
+
+  font-size: 1.875rem;
+
+  @media (min-width: $min-lg){
+    font-size: 2.25rem;
+  }
+}
+
+.font24{
+
+  &-static{
+    font-size: 1.5rem;
+  }
+
+  font-size: 1.25rem;
+
+  @media (min-width: $min-lg){
+    font-size: 1.5rem;
+  }
+}
+

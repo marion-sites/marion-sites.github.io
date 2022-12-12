@@ -1,0 +1,1 @@
+$("header.navigation").load("/template/header.html"); 
